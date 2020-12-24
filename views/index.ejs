@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect Trends || Find Salons near you</title>
+    <link rel="icon" href="/img/scissors.png">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/414536e512.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+<body>
+  <%- include('./partials/nav.ejs')%>
+    
+    <div class="container">
+      <article class="hero-container">
+        <section class="hero-img">
+          <div class="hero-text">
+            <h1 style="font-size: 40px; margin-bottom: 10px">
+              Select Your City
+            </h1>
+            <form action="/shops/">
+              <select id="city" name="city">
+                <option value="pune">Pune</option>
+                <option value="mumbai">Mumbai</option>
+              </select>
+              <button class="btn-white" type="submit">Submit</button>
+            </form>
+            <h3 style="margin-top: 60px; margin-bottom: 0px">ABOUT US</h3>
+            <p>
+              A <span class="bg-white">web application</span> created to reduce
+              the unnecessary hassle and the amount of time wasted by the users
+              waiting in line to use a salon service.<span class="bg-white">
+                This app helps you look up salons near you, read the reviews,
+                check the ratings and look up the services provided by them and
+                then make appointments for your visits accordingly.</span
+              >
+            </p>
+          </div>
+        </section>
+      </article>
+      <h2 style="text-align: center">How It works?</h2>
+      <article style="margin-bottom: 20px" class="info-cards">
+        <div class="card">
+          <i class="fas fa-search-location"></i>
+          <h2>Search</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+            debitis illo nobis dolores laboriosam. Quidem facere assumenda
+            iusto, nostrum asperzzzzzzzziores voluptatum illo quisquam
+            recusandae nisi provident ea totam sunt itaque!
+          </p>
+        </div>
+        <div class="card">
+          <i class="far fa-calendar-check"></i>
+          <h2>Book</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+            debitis illo nobis dolores laboriosam. Quidem facere assumenda
+            iusto, nostrum asperiores voluptatum illo quisquam recusandae nisi
+            provident ea totam sunt itaque!
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-cut"></i>
+          <h2>Get a Trim</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+            debitis illo nobis dolores laboriosam. Quidem facere assumenda
+            iusto, nostrum asperiores voluptatum illo quisquam recusandae nisi
+            provident ea totam sunt itaque!
+          </p>
+        </div>
+      </article>
+    </div>
+    <footer class="footer">
+      <p><i class="fa fa-heart"></i> Designed By Utkarsh</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>

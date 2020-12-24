@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap");
+
+:root {
+  --Primary-text: Montserrat;
+  --Secondary-text: Merriweather;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.bg-white {
+  background-color: white;
+  color: black;
+  padding: 1px;
+}
+.center {
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h1 {
+  font-family: var(--Secondary-text);
+  letter-spacing: 3px;
+}
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 5px;
+  border-bottom: 3px solid black;
+  font-family: var(--Secondary-text);
+  cursor: pointer;
+}
+.btn-white {
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.hero-container {
+  background-color: #485461;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.719)),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.hero-text {
+  width: 600px;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  padding: 20px;
+}
+.hero-text p {
+  text-align: justify;
+  letter-spacing: 1.5px;
+}
+select {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 3px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  margin: 0;
+  width: 150px;
+}
+/* Hover style */
+select:hover {
+  background-color: black;
+}
+.info-cards {
+  display: flex;
+  align-items: stretch;
+  width: 900px;
+  margin: 0 auto;
+}
+.card {
+  border: 2px solid grey;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding-bottom: 50px;
+  border-bottom: 10px solid black;
+  margin-bottom: 50px;
+  flex: 1;
+}
+.page-content {
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.37);
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.shop-card {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+  border-bottom: 4px solid black;
+  margin: 10px;
+}
+.img-container {
+  box-sizing: border-box;
+  align-self: end;
+}
+.img-container img {
+  max-width: 90%;
+  max-height: auto;
+}
+.info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+.info-container h4 {
+  margin: 0px;
+}
+.info-card {
+  background-color: white;
+  width: 80%;
+  align-self: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+/* --------------- Navbar ---------------- */
+.logo-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  background-color: white;
+}
+
+.logo-div img {
+  width: 180px;
+  object-fit: scale-down;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  max-width: 100%;
+}
+.navbar-links ul {
+  margin: 0;
+  margin-left: 2px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  display: block;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: var(--Primary-text);
+}
+.navbar-links li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  text-shadow: none;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+/* Navbar ends */
+.form-group {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  text-transform: capitalize;
+  font-family: var(--Secondary-text);
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.form-group input {
+  width: 400px;
+}
+.footer {
+  display: flex;
+  position: fixed;
+
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+}
+.footer p {
+  width: 100%;
+  color: white;
+}
+@media (max-width: 700px) {
+  .info-cards {
+    width: 80%;
+    flex-direction: column;
+  }
+  .hero-text {
+    width: 300px;
+  }
+  .hero-text p {
+    font-size: 13px;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    width: 100%;
+    margin: 0.2rem;
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+
+  .navbar-links li a:hover {
+    background-color: black;
+    color: white;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  .page-content {
+    width: 90%;
+  }
+  .shop-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+  }
+  .img-container img {
+    align-self: center;
+    object-fit: contain;
+  }
+}

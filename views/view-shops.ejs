@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salons in <%= city %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include('./partials/nav.ejs')%>
+    <article class="page-content">
+      <% shops.forEach((shop) => { %>
+      <section class="shop-card">
+        <div class="img-container">
+          <img style="width: 500px" src="/img/hero.jpg" alt="shop Image" />
+        </div>
+        <div class="info-container">
+          <h3><%= shop.shopName %></h3>
+          <h4><%= shop.address%>, <%= shop.city %></h4>
+          <p><i><%= shop.servicesProvided %></i></p>
+          <a href="<%= shop._id %>"
+            ><button type="button">Book Spot</button>
+          </a>
+        </div>
+      </section>
+      <% }) %>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title><%= shop.shopName%>,<%= shop.city %> || Connect Trends</title>
+  </head>
+  <body>
+    <article class="page-content">
+      <div class="img-container center">
+        <img style="margin: 10px" src="/img/hero.jpg" alt="shop-img" />
+      </div>
+      <div class="info-card">
+        <h4 style="font-weight: bold">
+          There are <%= shop.waitingQueue.length %> People in Line
+        </h4>
+        <h4>Book Your Spot!</h4>
+        <section class="form">
+          <form action="/shops/book-now" method="POST">
+            <div class="user-box">
+              <label for="name"> Name: </label>
+              <input type="text" for="name" name="name" />
+            </div>
+            <div class="user-box id-box">
+              <input
+                style="visibility: hidden"
+                type="text"
+                value="<%= shop._id %>"
+                name="shopId"
+                readonly
+              />
+            </div>
+            <button class="btn" type="submit">Book</button>
+          </form>
+        </section>
+      </div>
+      <section class="info-card">
+        <h2><%= shop.shopName%></h2>
+        <h3>
+          <i
+            >Shop Address and city:<br />
+            <%= shop.address %>, <%= shop.city %></i
+          >
+        </h3>
+        <h4><i>Contact Number: <%= shop.contactNo %></i></h4>
+        <p><i>Shop Rating: <%= shop.shopRating %> </i></p>
+        <p>
+          <i>Services Provided: <%= shop.servicesProvided %></i>
+        </p>
+        <p><i>Days Opened: <%= shop.daysOpened %></i></p>
+        <p>
+          <i
+            >Operating Hours: <%= shop.openingTime %> to <%= shop.closingTime
+            %></i
+          >
+        </p>
+      </section>
+    </article>
+  </body>
+</html>

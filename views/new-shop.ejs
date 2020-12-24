@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Salon</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="info-card">
+      <h2>Add New Shop</h2>
+      <form action="/shops/add-shop" method="POST">
+        <div class="form-group">
+          <label for="city">city</label>
+          <select id="city" name="city">
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="shopName">shop Name</label>
+          <input type="text" for="shopName" name="shopName" required />
+        </div>
+        <div class="form-group">
+          <label for="shopRating">shop Rating</label>
+          <input type="text" for="shopRating" name="shopRating" />
+        </div>
+        <div class="form-group">
+          <label for="contactNo">contact No</label>
+          <input type="text" for="contactNo" name="contactNo" required />
+        </div>
+        <div class="form-group">
+          <label for="address">address</label>
+          <input type="text" for="address" name="address" required />
+        </div>
+        <div class="form-group">
+          <label for="servicesProvided">services Provided</label>
+          <input type="text" for="servicesProvided" name="servicesProvided" />
+        </div>
+        <div class="form-group">
+          <label for="openingTime"
+            >opening Time <small>(in 24H format)</small>
+          </label>
+          <input type="text" for="openingTime" name="openingTime" />
+        </div>
+        <div class="form-group">
+          <label for="closingTime"
+            >closing Time <small>(in 24H format)</small></label
+          >
+          <input type="text" for="closingTime" name="closingTime" />
+        </div>
+        <div class="form-group">
+          <label for="daysOpened">days Opened</label>
+          <input type="text" for="daysOpened" name="daysOpened" />
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Confirmed</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include('./partials/nav.ejs')%>
+    <section class="info-card">
+      <h2>Hey! <%= user %>, Your Booking is Confirmed.</h2>
+      <h3>@ <%= shop.shopName%>, <%= shop.city%></h3>
+      <% const yourNumber = shop.waitingQueue.length-1 %>
+      <h3>There are <%= yourNumber%> people ahead of you.</h3>
+    </section>
+  </body>
+</html>

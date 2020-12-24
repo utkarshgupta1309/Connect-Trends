@@ -1,0 +1,279 @@
+/* .btn{
+    color:black;
+    width:200px;
+    margin: 10px;
+    padding: 8px;
+    background-color:white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn:hover{
+    color:white;
+    background-color:black;
+}
+.single{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 600px;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(153, 152, 152, 0.712) 100%, rgba(255,255,255,1) 100%), url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+.single-horizontal{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+
+.single a {
+  text-decoration: none;
+}
+.form-design{
+  padding: 50px;
+  background-color:rgb(17, 185, 185); 
+  border-radius: 10px;
+}
+
+.content {
+    text-decoration: none; 
+    display: flex;
+    align-items: flex-start;
+    flex-direction:column;
+    color:white;
+}
+.item-1{
+  order: 1;
+  background-color: rgb(17, 185, 185);
+  padding: 5px;
+  margin:10px;
+  
+}
+.item-2{
+  order: 3;
+  background-color: rgb(17, 185, 185);
+  padding: 5px;
+}
+.item-3{
+  order:4;
+  background-color: rgb(17, 185, 185);
+  padding: 5px;
+}
+.item-4{
+  order: 5;
+  background-color: rgb(17, 185, 185);
+  padding: 5px;
+}
+.item-5{
+  width: 150px;
+  order: 2;
+  border: 1px solid black;
+}
+
+h4, h1, h2, h3{
+  text-transform: capitalize;
+  margin: 10px;
+  
+}
+.container-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+}
+input, select, textarea{
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    width: 200px;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-top: 10px;
+} */
+.salons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.salon-card {
+  padding: 2px;
+  margin: 20px;
+  box-sizing: border-box;
+  display: flex; /* so child elements can use flexbox stuff too! */
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  text-emphasis: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+.salon-card :hover {
+  background-color: #292826;
+  color: rgb(224, 203, 158);
+}
+.salon-img img {
+  width: 300px;
+}
+.salon-info {
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+}
+.salon-info h3 h4 {
+  padding: 0;
+}
+
+.logo-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  background-color: white;
+}
+
+.logo-div img {
+  width: 180px;
+  object-fit: scale-down;
+}
+.btn {
+  color: black;
+  width: 50px;
+  margin: 10px;
+  padding: 8px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.shop-img img {
+  width: 400px;
+}
+.container {
+  display: flex;
+}
+.form {
+  margin: 20px;
+  align-self: space-between;
+}
+.id-box {
+  visibility: hidden;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+/* --------------- Navbar ---------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  max-width: 100%;
+}
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.navbar-links li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  text-shadow: none;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    width: 100%;
+    margin: 0.2rem;
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+
+  .navbar-links li a:hover {
+    background-color: black;
+    color: white;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
